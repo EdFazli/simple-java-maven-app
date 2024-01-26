@@ -16,5 +16,10 @@ pipeline {
                 }
             }
         }
+        stage('Deliver') {
+            steps {
+                sh './jenkins/scrtpis/deliver.sh'
+            }
+        }
     }
 }
